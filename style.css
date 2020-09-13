@@ -1,11 +1,60 @@
+body{
+  line-height: 1.5;
+}
+
 #navbar {
   position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  border-right: 5px ridge;
+}
+
+#navbar header {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  }
 }
 
 #navbar li {
+  position: relative;
+  width: 100%;
   list-style: none;
+  border-top: 1px solid;
 }
 
 #navbar a {
   text-decoration: none;
+  display: block;
+  padding:10px 30px;
+}
+
+#main-doc{
+  margin-left: 275px;
+}
+
+section header {
+  font-size: 2em;
+}
+
+section article {
+  margin: 15px;
+}
+
+section p {
+  font-size: 18px;
+}
+
+section code {
+  padding: 5px;
+  color: orange;
+  background-color: black;
 }

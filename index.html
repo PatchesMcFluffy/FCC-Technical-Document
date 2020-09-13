@@ -9,11 +9,11 @@
 
   <!--Document Navigation-->
   <nav id="navbar">
-    <header>Google Maps Geolocation API</header>
+    <header>Lua Documentation</header>
     <ul>
-      <li><a href="introduction" class="nav-link"></a></li>
-      <li><a href="Hello World!" class="nav-link"></a></li>
-      <li><a href="#section3" class="nav-link"></a></li>
+      <li><a href="Introduction" class="nav-link">Introduction</a></li>
+      <li><a href="Hello World!" class="nav-link">Hello World</a></li>
+      <li><a href="Variables" class="nav-link">Variables</a></li>
       <li><a href="#section4" class="nav-link"></a></li>
       <li><a href="#section5" class="nav-link"></a></li>
     </ul>
@@ -26,6 +26,12 @@
       <article>
         <p>
           Lua was created as a light weight, high-level programming language to meet the increasing demand for software customization. Lua is also cross-platform due to the fact that it is interpreter is written in ANSI C. This allows developers to embed Lua via simple C API.
+
+          Lua does a few things differently than most high-level languages.
+          <ul>
+            <li>Lua does not include complex features by default.</li>
+            <li>Lua includes a set of mechanics to allow developers to add custom features to the language</li>
+          </ul>
         </p>
       </article>
     </section>
@@ -34,14 +40,28 @@
       <header>Hello World!</header>
       <article>
         <p>
-          The classic "Hello World!" program can is written as follows in Lua.
-          <code>print("Hello World!") </code>
+          The classic "Hello World!" program is written as follows in Lua.
         </p>
+        <code>print("Hello World!") </code>
       </article>
     </section>
 
-    <section id="section3" class="main-section">
-      <header></header>
+    <section id="Variables" class="main-section">
+      <header>Variables</header>
+      <article>
+        <p>
+          Variables is lua follow similar rules to other programming languages.
+          <ul>
+            <li>Variables are dynamically typed, there for <a href="https://en.wikipedia.org/wiki/Type_conversion">typecasting</a> is not required</li>
+            <li>Variables do not need to be predefined before they can be used, and are initialized with a value of <code>nil</code></li>
+            <li>Variables cannot begin with a digit</li>
+            <li>Variables can be any combination of letters, underscores, and digits</li>
+            <li>Variable are case sensitive ie: <code>Foo</code>, and <code>foo</code> are seperate and distinct variables</li>
+            <li>Variables are global by default</li>
+            <li>Local variables have <a href="https://en.wikipedia.org/wiki/Scope_(computer_science)#Lexical_scoping">lexical scope</a> </li>
+          </ul>
+        </p>
+      </article>
     </section>
 
     <section id="section4" class="main-section">
