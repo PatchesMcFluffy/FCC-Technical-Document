@@ -1,0 +1,11 @@
+#navbar {
+  position: fixed;
+}
+
+#navbar li {
+  list-style: none;
+}
+
+#navbar a {
+  text-decoration: none;
+}
