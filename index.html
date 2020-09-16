@@ -64,8 +64,27 @@
       </article>
     </section>
 
-    <section id="section4" class="main-section">
-      <header></header>
+    <section id="Declaring_Variables" class="main-section">
+      <header>Declaring Variables</header>
+      <article>
+        <p>
+          Lua allows the declaration of local and global variables.
+          Local variables are declared with the <code>local</code> prefix.
+        </p>
+        <pre>
+          local foo = 2
+        </pre>
+        <P>
+          Locally declared variables are scoped to the block they are declared in.
+        </P>
+        <pre>
+          while foo<=bar do
+            local bar = foo*2  --> scoped to the while loop
+            print(bar)
+            foo = foo + 1
+            end
+        </pre>
+      </article>
     </section>
 
     <section id="section5" class="main-section">
