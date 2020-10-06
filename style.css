@@ -14,7 +14,7 @@ body{
 #navbar header {
   font-size: 1.5em;
   text-align: center;
-  color:purple ;
+  color:rgb(58, 2, 58) ;
 }
 
 #navbar ul {
@@ -26,7 +26,7 @@ body{
 
 
 #navbar li {
-  background-color:purple ;
+  background-color:rgb(58, 2, 58) ;
   position: relative;
   width: 100%;
   list-style: none;
@@ -60,13 +60,13 @@ section p {
 section code {
   font-size: 12px;
   padding: 2px;
-  color: white;
-  background-color:purple;
+  color: rgb(255, 255, 255);
+  background-color:rgb(49, 49, 49);
 }
 
 section pre {
   font-size: 12px;
   padding: 5px;
-  color: white;
-  background-color:purple;
+  color: rgb(255, 255, 255);
+  background-color:rgb(53, 53, 53);
 }
