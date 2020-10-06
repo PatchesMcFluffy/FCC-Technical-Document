@@ -12,10 +12,10 @@
     <header>Lua Documentation</header>
     <ul>
       <li><a href="#Introduction" class="nav-link">Introduction</a></li>
-      <li><a href="#Hello_World!" class="nav-link">Hello World</a></li>
+      <li><a href="#Hello_World!" class="nav-link">Hello World!</a></li>
       <li><a href="#Variables" class="nav-link">Variables</a></li>
       <li><a href="#Declaring_Variables" class="nav-link">Declaring Variables</a></li>
-      <li><a href="#section5" class="nav-link"></a></li>
+      <li><a href="#For_loops" class="nav-link">For loops</a></li>
     </ul>
   </nav>
 
@@ -102,8 +102,61 @@
       </article>
     </section>
 
-    <section id="section5" class="main-section">
-      <header></header>
+    <section id="For_loops" class="main-section">
+      <header>For loops</header>
+      <p>
+        As with other programming languages, lua has several different types of loops. We will look at a few of the most common types of loops, and what their syntax looks like.
+      </p>
+      <p>
+        <h3>The for loop</h3>
+        The for loop has two variants: the <i>numeric</i> for and the <i>generic</i> for.
+        the numeric for loop has the following syntax:
+      </p>
+      <pre>
+        for var=exp1,exp2,exp3 do
+          something
+        end
+      </pre>
+      <p>
+        The loop executes <code>something</code> for each value of <code>var</code> starting with <code>exp1</code>, then <code>exp2</code>, using <code>exp3</code> as the step increment. The inclusion of a step value in the loop is optional. if a value is not present, lua will assume a value of 1 for the step value. A typical numeric for looks as follows:
+      </p>
+      <pre>
+        for i=1,f(x) do print(i) end
+
+        for i=10,1,-1 do print(i) end
+      </pre>
+      <p>
+        There are a few things that you should keep in mind when writting for loops:
+        <ul>
+          <li>Lua evaluates all of the values once before the loop starts</li>
+          <li>The control value <code>i</code> is a local variable decalred by the for loop, and only visible in side the loop</li>
+          <li>You should <b>never</b> change the value of the control varaible. Doing</li>
+        </ul>
+          if you need to store the value of the control variable after the loop finishes. You must save it in another variable.
+        <pre>
+  local found = nil
+    for i=1,a.n do
+      if a[i] == value then
+        found = i      --> save value of `i'
+        break
+    end
+  end
+  print(found)
+        </pre> 
+      </p>
+      <p>
+        <h3>Generic for loop</h3>
+        In the example below we are printing all values of array <code>a</code>
+      </p>
+      <pre>
+        for i,v in ipairs(a) do print(v) end
+      </pre>
+      <p>
+        For each step is the above example, <code>i</code> gets an index while <code>v</code> gets the value associated with that index. A similar example of how to print all the keys of a table <code>t</code> would look like this:
+      </p>
+      <pre>
+        for k in pairs(t) do print(k) end
+      </pre>
     </section>
 
     <script src=" https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
