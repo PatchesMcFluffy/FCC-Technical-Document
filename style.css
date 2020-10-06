@@ -27,7 +27,6 @@ body{
 
 #navbar li {
   background-color:rgb(58, 2, 58) ;
-  position: relative;
   width: 100%;
   list-style: none;
   border-top: 1px solid white;
@@ -84,9 +83,11 @@ section pre {
     border: none;
     display: inline;
   }
+
   #main-doc {
-    margin-left: 0px;
-    margin: 10px;
+    margin-top:;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   section header{
