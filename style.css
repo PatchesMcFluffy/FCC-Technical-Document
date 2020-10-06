@@ -49,6 +49,11 @@ section header {
   font-size: 2em;
 }
 
+h3 {
+  font-weight: normal;
+  text-decoration: underline;
+}
+
 section article {
   margin: 15px;
 }
@@ -69,4 +74,27 @@ section pre {
   padding: 5px;
   color: rgb(255, 255, 255);
   background-color:rgb(53, 53, 53);
+}
+
+@media only screen 
+  and (max-width: 780px) {
+
+  #navbar {
+    position: static;
+    border: none;
+    display: inline;
+  }
+  #main-doc {
+    margin-left: 0px;
+    margin: 10px;
+  }
+
+  section header{
+    font-size: 1.5em;
+  }
+
+  section p{
+    font-size: 1em;
+  }
+
 }
